@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PassBookComponent } from './pass-book/pass-book.component';
+import { CheckBalanceComponent } from './check-balance/check-balance.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileComponent,
+    PassBookComponent,
+    CheckBalanceComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
