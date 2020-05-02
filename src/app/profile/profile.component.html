@@ -1,1 +1,46 @@
-<p>profile works!</p>
+<body id="body">
+    <h1 class="text-center mt-3">PROFILE</h1>
+    <style> 
+      #section {
+        box-sizing: content-box;  
+        width: 400px;
+        height: 2ew;
+        padding: 30px;  
+        border-width:3px;
+        border-color: gray;  
+        border-style:outset;
+        background-color: rgb(253, 253, 253);
+      }
+      
+    </style>
+    <form>
+        <div class="form-group">
+            <label for="userid">USER-ID</label>
+            <input type="text" class="form-control" id="userid" placeholder="your userid">
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstname">FIRST-NAME</label>
+            <input type="text" class="form-control" id="firstname">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastname">LAST-NAME</label>
+            <input type="text" class="form-control" id="lastname">
+          </div>
+        </div>
+       
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="email" class="form-control" id="email" placeholder="sharonsony@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="phonenumber">PHONE-NUMBER</label>
+            <input type="text" class="form-control" id="phonenumber" placeholder="0000000000">
+          </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Update Profile</button>
+      </form>
+      <br>
+      <button class="btn btn-primary">Delete Profile</button>
+  </body>
