@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl } from '@angular/forms';
+import { User } from '../user';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,7 +10,16 @@ import { FormControl } from '@angular/forms';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  user: User = new User();
+
+  constructor(private userService: UserService, private route: Router) { }
+
+  updateProfile() {
+    console.log('profile updated');
+  }
+  onSubmit() {
+    console.log('submitted');
+  }
 
   ngOnInit(): void {
   }
