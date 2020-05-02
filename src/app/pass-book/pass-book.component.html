@@ -1,20 +1,13 @@
 <h1>Passbook</h1>
 <br>
-<p>Search Form</p>
-<pre>
-  date:<input [(ngModel)]="date":any placeholder="date"/>
- 
-    </pre>
-    
-    <button (click)="showDetails()" class="btn btn-success">Search </button>
-  
+
 <table>
   <tr>
-    <th (click)='change("id")'>Transaction Id</th>
-    <th (click)='change("description")'>Description</th>
-    <th (click)='change("amount")'>Amount</th>
-    <th (click)='change("amountbalance")'>Amount Balance</th>
-    <th (click)='change("date")'>Trans Date</th>
+    <th>Transaction Id</th>
+    <th>Description</th>
+    <th>Amount</th>
+    <th>Amount Balance</th>
+    <th>Trans Date</th>
 
 
   </tr>
@@ -24,7 +17,21 @@
     <td>{{transaction.amount}}</td>
     <td>{{transaction.amountbalance}}</td>
     <td>{{transaction.date}}</td>
-
-    <td><button (click)="onclickDeleteDetails(emp)" class="btn btn-success">Delete</button></td>
   </tr>
 </table>
+
+<!--
+  <p>Search Form</p>
+<pre>
+  date:<input [(ngModel)]="date":any placeholder="date"/>
+ 
+    </pre>
+
+<button (click)="showDetails()" class="btn btn-success">Search </button>
+
+      <th (click)='change("id")'>Transaction Id</th>
+    <th (click)='change("description")'>Description</th>
+    <th (click)='change("amount")'>Amount</th>
+    <th (click)='change("amountbalance")'>Amount Balance</th>
+    <th (click)='change("date")'>Trans Date</th>
+-->

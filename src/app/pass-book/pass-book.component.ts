@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranshistoryService } from '../transhistory.service';
+import { Transhistory } from '../transhistory';
 
 @Component({
   selector: 'app-pass-book',
@@ -8,7 +10,12 @@ import { Router } from '@angular/router';
 })
 export class PassBookComponent implements OnInit {
 
-  constructor() { }
+  transhistory: Transhistory = new Transhistory();
+  constructor(private TranshistoryService: TranshistoryService, private route: Router) { }
+
+  showDetails() {
+    console.log('search by date');
+  }
 
   ngOnInit(): void {
   }
