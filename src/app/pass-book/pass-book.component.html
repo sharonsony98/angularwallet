@@ -1,21 +1,21 @@
-<p>pass-book works!</p>
-<table *ngIf="val" border="1">    
-    <tr> 
-      <th (click)='change("id")'>Transaction Id</th>    
-      <th (click)='change("description")' >Description</th>    
-      <th (click)='change("amount")'>Amount</th>    
-      <th (click)='change("amountbalance")'>Amount Balance</th> 
-      <th (click)='change("date")'>Trans Date</th> 
-          
-          
-    </tr>    
-    <tr *ngFor="let transaction of transhistory | orderBy:column">  
-      <td >{{emp.id}}</td> 
-      <td >{{emp.name}}</td>       
-      <td >{{emp.price}}</td> 
-      <td>{{emp.category}}</td> 
-     
-      <td><button (click)="onclickDeleteDetails(emp)" class="btn btn-success">Delete</button></td>  
-    </tr>    
-  </table>
- 
+<h1>Passbook</h1>
+<table>
+  <tr>
+    <th (click)='change("id")'>Transaction Id</th>
+    <th (click)='change("description")'>Description</th>
+    <th (click)='change("amount")'>Amount</th>
+    <th (click)='change("amountbalance")'>Amount Balance</th>
+    <th (click)='change("date")'>Trans Date</th>
+
+
+  </tr>
+  <tr *ngFor="let transaction of transhistory | orderBy:column">
+    <td>{{transaction.id}}</td>
+    <td>{{transaction.description}}</td>
+    <td>{{transaction.amount}}</td>
+    <td>{{transaction.amountbalance}}</td>
+    <td>{{transaction.date}}</td>
+
+    <td><button (click)="onclickDeleteDetails(emp)" class="btn btn-success">Delete</button></td>
+  </tr>
+</table>
