@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { PassBookComponent } from './pass-book/pass-book.component';
 import { CheckBalanceComponent } from './check-balance/check-balance.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { SearchbyPipe } from './searchby.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TopbarComponent } from './topbar/topbar.component';
     ProfileComponent,
     PassBookComponent,
     CheckBalanceComponent,
-    TopbarComponent
+    TopbarComponent,
+    SearchbyPipe
   ],
   imports: [
     BrowserModule,
