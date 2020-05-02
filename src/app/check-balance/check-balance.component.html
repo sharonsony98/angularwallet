@@ -1,1 +1,13 @@
-<p>check-balance works!</p>
+<h1> Account Balance</h1>
+<table>
+ <tr>
+  <th>Account Id</th>
+  <th>Status</th>
+  <th>Balance</th>
+ </tr>
+ <tr>
+  <td>{{balance.id || 'xxxxxxxx'}}</td>
+  <td>{{balance.status? 'Active': 'Inactive'}}</td>
+  <td>{{balance.amountbalance || 0.00}}</td>
+ </tr>
+</table>
