@@ -1,13 +1,18 @@
-<header class="text-center mt-3">
+<body>
+  <header class="text-center mt-3">
     <h1>{{title}}</h1>
   </header>
-  <nav class=" row bg-dark navbar-light">
-    <a routerLink="profile" class="nav-link ">Profile</a>&nbsp;&nbsp;
-    <a routerLink="pass-book" class="nav-link">PassBook</a>&nbsp;&nbsp;
-    <a routerLink="check-balance" class="nav-link">CheckBalance</a>
-    
-  </nav>
-  <hr/>
-  <router-outlet></router-outlet>
-  
+  <nav class="bg-dark navbar navbar-dark">
+    <div class="navbar-nav mr-auto">
+      <a routerLink="profile" class="nav-item nav-link ">Profile</a>
+      <a routerLink="pass-book" class="nav-item nav-link">PassBook</a>
+      <a routerLink="check-balance" class="nav-item nav-link">CheckBalance</a>
+    </div>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
 
+
+  </nav>
+  <hr />
+  <router-outlet></router-outlet>
+</body>

@@ -9,6 +9,7 @@ import { PassBookComponent } from './pass-book/pass-book.component';
 import { CheckBalanceComponent } from './check-balance/check-balance.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SearchbyPipe } from './searchby.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SearchbyPipe } from './searchby.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
