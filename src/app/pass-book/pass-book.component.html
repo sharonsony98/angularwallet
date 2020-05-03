@@ -2,6 +2,11 @@
   <h2 class="text-center">Passbook</h2>
   <br>
   <div class="row justify-content-center text-center">
+    <!--
+    <p>Search Form</p>
+    <pre> date:<input [(ngModel)]="date":any placeholder="date"/></pre>
+    <button (click)="showDetails()" class="btn btn-success">Search </button>
+-->
     <table class="table">
       <tr>
         <th scope="col">Transaction Id</th>
@@ -9,8 +14,6 @@
         <th scope="col">Amount</th>
         <th scope="col">Amount Balance</th>
         <th scope="col">Trans Date</th>
-
-
       </tr>
       <tr *ngFor="let transaction of transhistory ">
         <td>{{transaction.id||'xxxxxx'}}</td>
@@ -22,19 +25,3 @@
     </table>
   </div>
 </div>
-
-<!--
-  <p>Search Form</p>
-<pre>
-  date:<input [(ngModel)]="date":any placeholder="date"/>
- 
-    </pre>
-
-<button (click)="showDetails()" class="btn btn-success">Search </button>
-
-      <th (click)='change("id")'>Transaction Id</th>
-    <th (click)='change("description")'>Description</th>
-    <th (click)='change("amount")'>Amount</th>
-    <th (click)='change("amountbalance")'>Amount Balance</th>
-    <th (click)='change("date")'>Trans Date</th>
--->
