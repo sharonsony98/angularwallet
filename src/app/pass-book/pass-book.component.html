@@ -1,24 +1,27 @@
-<h1>Passbook</h1>
-<br>
+<div class="container">
+  <h2 class="text-center">Passbook</h2>
+  <br>
+  <div class="row justify-content-center text-center">
+    <table class="table">
+      <tr>
+        <th scope="col">Transaction Id</th>
+        <th scope="col">Description</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Amount Balance</th>
+        <th scope="col">Trans Date</th>
 
-<table>
-  <tr>
-    <th>Transaction Id</th>
-    <th>Description</th>
-    <th>Amount</th>
-    <th>Amount Balance</th>
-    <th>Trans Date</th>
 
-
-  </tr>
-  <tr *ngFor="let transaction of transhistory ">
-    <td>{{transaction.id}}</td>
-    <td>{{transaction.description}}</td>
-    <td>{{transaction.amount}}</td>
-    <td>{{transaction.amountbalance}}</td>
-    <td>{{transaction.date}}</td>
-  </tr>
-</table>
+      </tr>
+      <tr *ngFor="let transaction of transhistory ">
+        <td>{{transaction.id||'xxxxxx'}}</td>
+        <td>{{transaction.description||'reason'}}</td>
+        <td>{{transaction.amount||0.00}}</td>
+        <td>{{transaction.amountbalance||0.00}}</td>
+        <td>{{transaction.date||Date}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 <!--
   <p>Search Form</p>
