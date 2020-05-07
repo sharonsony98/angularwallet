@@ -8,9 +8,9 @@ import { User } from './user';
 export class UserService {
   //constructor() { }
   constructor(private http: HttpClient) { }  
-  //public profile(): Observable<User[]> {
- // return this.http.get<User[]>('http://localhost:8081/userdetails/');
-   //  }
+  public profile(): Observable<User[]> {
+  return this.http.get<User[]>('http://localhost:8081/userdetails/');
+     }
    
  }
 

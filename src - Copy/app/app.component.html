@@ -1,0 +1,14 @@
+<body>
+  <header class="text-center mt-3">
+    <h1>{{title}}</h1>
+  </header>
+  <nav class="bg-dark navbar navbar-dark">
+    <div class="navbar-nav mr-auto">
+      <a routerLink="profile" class="nav-item nav-link ">Profile</a>
+      <a routerLink="pass-book" class="nav-item nav-link">PassBook</a>
+      <a routerLink="check-balance" class="nav-item nav-link">CheckBalance</a>
+    </div>
+  </nav>
+  <hr />
+  <router-outlet></router-outlet>
+</body>

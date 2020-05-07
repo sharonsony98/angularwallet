@@ -1,0 +1,18 @@
+<h2 class="text-center"> Account Balance</h2>
+<br />
+<div class="container">
+ <div class="row justify-content-center">
+  <table class="table col-md-8 text-center">
+   <tr>
+    <th scope="col">Account Id</th>
+    <th scope="col">Status</th>
+    <th scope="col">Balance</th>
+   </tr>
+   <tr>
+    <td>{{balance.id || 'xxxxxxxx'}}</td>
+    <td>{{balance.status? 'Active': 'Inactive'}}</td>
+    <td>{{balance.amountbalance || 0.00}}</td>
+   </tr>
+  </table>
+ </div>
+</div>

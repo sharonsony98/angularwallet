@@ -17,24 +17,21 @@ export class ProfileComponent implements OnInit {
 
   updateProfile() {
     console.log('profile updated');
-  //  this.userService.profile().subscribe(data =>{
-    //  this.users=data; 
-   // console.log(this.users);
+    this.userService.profile().subscribe(data =>{
+      this.users=data; 
+    console.log(this.users);
   //  this.info=data;
- // },
-  //error => {
+  },
+  error => {
     //this.info = undefined;
     //this.errorInfo = error.error;
- // } );
+  } );
   }
   onSubmit() {
     console.log('submitted');
   }
 
   ngOnInit(): void {
-    this.userService.profile().subscribe(data =>{
-      this.users=data; 
-  });
+  }
 
-}
 }
