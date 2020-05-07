@@ -7,6 +7,20 @@
     <pre> date:<input [(ngModel)]="date":any placeholder="date"/></pre>
     <button (click)="showDetails()" class="btn btn-success">Search </button>
 -->
+    <form action="showDetails()" class="container">
+      <div class="form-row">
+        <div class="col">
+          <p>Search transaction by Date: </p>
+        </div>
+        <div class="col">
+          <input type="date" id="date search" class="form-control">
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-success">Search</button>
+        </div>
+
+      </div>
+    </form>
     <table class="table">
       <tr>
         <th scope="col">Transaction Id</th>
